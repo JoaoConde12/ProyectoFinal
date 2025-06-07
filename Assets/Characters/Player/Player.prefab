@@ -181,7 +181,19 @@ MonoBehaviour:
     m_ActionId: d30b7e52-cbca-4cc4-b75e-b889886c2dde
     m_ActionName: Player/Look[/Mouse/delta,/Touchscreen/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 112717696212462314}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: ab69e99b-7c8d-4079-a3d1-b84d900c7959
     m_ActionName: Player/Attack[/Mouse/leftButton,/Touchscreen/primaryTouch/tap]
   - m_PersistentCalls:
@@ -344,4 +356,8 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   groundDistance: 0.05
+  wallDistance: 0.2
+  ceilingDistance: 0.05
   _isGrounded: 1
+  _isOnWall: 1
+  _isOnCeiling: 1
